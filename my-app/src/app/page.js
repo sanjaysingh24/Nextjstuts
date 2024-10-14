@@ -1,17 +1,20 @@
+'use client'
+
+import { useState } from "react";
+
 
 export default function Home() {
+const[name,setname] =useState("Anil");
 
-const name = "sanju baba is here"
-const syam = "dsjfjkasd"
+
   return (
  <>
  <div>
 
-   <h2 className ="text-center text-3xl">Hii sanju</h2>
-   <User name={name}></User>
-   <User name={syam}></User>
-   
-   {/* <User></User> */}
+   <h2 className ="text-center text-3xl mt-5">Hii sanju</h2>
+ <h1 className="text-3xl text-center bg-slate-600 py-3 px-4">Basic Routings and Make new pages
+ </h1>
+
 </div>
  </>
   );
