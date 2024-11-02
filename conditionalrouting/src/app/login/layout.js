@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 export default function Loginlayout({children}){
 const pathname = usePathname();
 // if we have multiple then we can do like this add an array and  by using includes check the pathname
-const hidddenpathname = ["/login/teacher"];
+const hidddenpathname = ["/login/teacher","/login/loginstudent"];
 
 return(
     <div>

@@ -6,7 +6,7 @@ const page = ({params}) => {
   return (
     <div>
       <h1 className='px-6 mt-5 text-xl font-bold'>
-        Student details
+        Student details {params.student}
       </h1>
     </div>
   )
