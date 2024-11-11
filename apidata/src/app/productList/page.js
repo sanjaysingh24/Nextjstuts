@@ -19,7 +19,7 @@ export default function Page() {
       <h1 className="text-2xl font-bold mb-4">Product List</h1>
       
       {/* Parent grid for two-column layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-4  gap-4 p-4">
         {prodata.map((item) => {
       
           return (
