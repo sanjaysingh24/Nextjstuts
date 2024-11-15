@@ -1,8 +1,8 @@
 import { users } from "@/utils/db"
 import { NextResponse } from "next/server";
 
-export const GET=(request,content)=>{
-    const uid = content.params?.id;
+export const GET=async(request,content)=>{
+    const uid = await content.params?.id;
     const user = users;
     const detaildata = user.filter((item)=>item.id==uid)
    if(detaildata.length!=0){

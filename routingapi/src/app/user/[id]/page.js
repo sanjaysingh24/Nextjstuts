@@ -1,11 +1,15 @@
-const page =async ({params})=>{
-const {id} = await params;
-async function getdetail (){
+async function getdetail (id){
     let data = await fetch(`http://localhost:3000/api/user/${id}`);
     data = await data.json();
     return data;
 }
-let data = await getdetail();
+
+
+const page =async ({params})=>{
+const uid = await params;
+const id = uid.id;
+
+let data = await getdetail(id);
 let detail = data?.detaildata;
 
 

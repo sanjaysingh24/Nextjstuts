@@ -15,10 +15,10 @@ const page = async()=>{
      <>
      {getdatas.map((item)=>{
         return(
-        <>
+        <div key={item?.id}>
     
     <Link href ={`/user/${item?.id}`}><p>{item?.name}</p></Link>
-        </>
+        </div>
         )
      })}
      
