@@ -1,0 +1,1 @@
+export const connectstr = "mongodb+srv://admin:admin@cluster0.hnzyw.mongodb.net/Curd"
