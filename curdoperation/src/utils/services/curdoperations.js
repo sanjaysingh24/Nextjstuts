@@ -1,3 +1,4 @@
+import axios from "axios";
 import axiosInstance from "../axiosInstance";
 
 
@@ -9,4 +10,22 @@ try{
 }catch(error){
     console.log(error);
 }
+}
+
+
+export const getuser = async()=>{
+    try{
+        const response = await axiosInstance.get("/api/getuser");
+        return response.data;
+    }catch(error){
+        console.log(error);
+    }
+}
+export const deleteuser = async(id)=>{
+console.log(id);
+    try{
+     const response = await axiosInstance.delete(`/api/deleteuser/${id}`)
+    }catch(error){
+        console.log(error);
+    }
 }
